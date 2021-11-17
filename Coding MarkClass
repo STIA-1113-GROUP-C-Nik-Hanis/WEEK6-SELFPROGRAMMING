@@ -1,0 +1,72 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class MarkClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner (System.in);
+		
+		double mark1 ;
+		String subject1; 
+		
+		double mark2 ;
+		String subject2; 
+		
+		double average;
+		char grade;
+		
+		System.out.print("Enter name of the subject: ");
+		subject1 = sc.next();
+		System.out.print("Enter mark of this subject: ");
+		mark1 = sc.nextDouble();
+		
+		System.out.print("Enter name of the subject: ");
+		subject2 = sc.next();
+		System.out.print("Enter mark of this subject: ");
+		mark2 = sc.nextDouble();
+		
+		System.out.println();
+		
+		if (mark1 > 50) 
+			System.out.println("You passed " + subject1 + " test");
+		else 
+			System.out.println("You failed " + subject1 + " test");
+			
+	    if (mark2 > 50)
+			System.out.println("You passed " + subject2 + " test");
+	    else
+	    	System.out.println("You failed " + subject2 + " test");
+	    
+	    System.out.println();
+	    
+		if (mark1 > mark2)
+			System.out.println("Subject " + subject1 + " mark is greater than " + subject2 + " mark");
+		else 
+			System.out.println("Subject " + subject1 + " mark is less than " + subject2 + " mark");
+		
+		if (mark2 > mark1)
+			System.out.println("Subject " + subject2 + " mark is greater than " + subject1 + " mark");
+		else 
+			System.out.println("Subject " + subject2 + " mark is less than " + subject1 + " mark");
+		
+		System.out.println();
+		
+		average = (mark1 + mark2) / 2;
+		System.out.println("Average marks for both subject is : " + average );
+		
+		if ((average >= 80) && (average <= 100))
+			grade = 'A';
+		else if ((average >= 60) && (average <= 79))
+			grade = 'B';
+		else if ((average >= 50) && (average <= 59))
+			grade = 'C';
+		else
+			grade = 'F';
+		
+		System.out.println("Your grade for both subject is : " + grade);
+	}
+
+}
