@@ -1,0 +1,13 @@
+Enter name of the subject: math
+Enter mark of this subject: 75
+Enter name of the subject: science
+Enter mark of this subject: 40
+
+You passed math test
+You failed science test
+
+Subject math mark is greater than science mark
+Subject science mark is less than math mark
+
+Average marks for both subject is : 57.5
+Your grade for both subject is : C
